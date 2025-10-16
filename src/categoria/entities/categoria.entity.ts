@@ -1,5 +1,5 @@
 import { IsNotEmpty } from "class-validator";
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity({ name: 'tb_categoria' })
 export class Categoria {
@@ -13,4 +13,5 @@ export class Categoria {
   @IsNotEmpty()
   @Column({ length: 500, nullable: false })
   descricao: string;
+    produto: any;
 }

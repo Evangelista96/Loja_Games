@@ -8,6 +8,9 @@ import { Repository } from 'typeorm';
 
 @Injectable()
 export class CategoriaService {
+    findById(id: number) {
+        throw new Error('Method not implemented.');
+    }
     constructor(
         @InjectRepository(Categoria)
         private categoriaRepository: Repository<Categoria>
